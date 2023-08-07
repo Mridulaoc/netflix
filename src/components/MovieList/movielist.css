@@ -1,0 +1,45 @@
+
+
+
+.movie-list-container{
+    margin-left: 3rem;
+    color: white;
+}
+
+.movie-list-container h2{
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.movie-list{
+    display: flex;
+    padding: 2.5rem;  
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+    
+}
+
+.movie-list::-webkit-scrollbar{
+  overflow: hidden;
+} 
+
+.movie{
+    max-height: 25rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.movie-small{
+    max-height: 15rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.movie:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+
+

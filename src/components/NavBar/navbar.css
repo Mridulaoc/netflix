@@ -1,0 +1,25 @@
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(1, 1, 1);
+}
+
+.logo{
+    width: 10rem;
+   position: fixed;
+   left: 2rem;
+}
+
+.avtar{
+    width: 3rem;
+    height: 3rem;
+    position: fixed;
+    right: 2rem;
+    
+    
+}

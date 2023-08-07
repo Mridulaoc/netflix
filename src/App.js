@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import './App.css'
+import NavBar from './components/NavBar/NavBar'
+import Banner from './components/Banner/Banner'
+import MovieList from './components/MovieList/MovieList'
+import { action, originals, romance, horror, comedy, documentaries } from './urls';
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <NavBar />
+      <Banner />
+      <MovieList title='Netflix Orginals' url={originals} />
+      <MovieList title='Action' url={action} isSmall />
+      <MovieList title='Comedy' url={comedy} isSmall />
+      <MovieList title='Romance' url={romance} isSmall />
+      <MovieList title='Horror' url={horror} isSmall />
+      <MovieList title='Documentaries' url={documentaries} isSmall/>
+      
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
